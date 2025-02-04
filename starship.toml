@@ -2,6 +2,7 @@ format = """
 [░▒▓](#a3aed2)\
 $os\
 $username\
+$conda\
 [](bg:#769ff0 fg:#a3aed2)\
 $directory\
 [](fg:#769ff0 bg:#394260)\
@@ -29,7 +30,7 @@ disabled = false
 
 [os]
 style = "fg:#090c0c bg:#a3aed2"
-format = '[ $symbol]($style)'
+format = '[ $symbol ]($style)'
 disabled = false
 
 [directory]
@@ -88,6 +89,10 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 symbol = ""
 style = "bg:#212736"
 format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[conda]
+style = "fg:#090c0c bg:#a3aed2"
+format = '[ $symbol ($environment) ]($style)'
 
 [os.symbols]
 Alpaquita = " "
